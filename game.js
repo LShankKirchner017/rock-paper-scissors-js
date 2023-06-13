@@ -40,4 +40,4 @@ while (keepPlaying ) {
 
 }
 
-console.log("Play again soon!")
+alert("See ya! Play again soon!")
