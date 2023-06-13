@@ -18,24 +18,23 @@ console.log("Human: " + humanChoice)
 console.log("Computer: " + computerChoice)
 //compare choices
 if(
-   humanChoice === "S" && computerChoice === "P" ||
+    humanChoice === "S" && computerChoice === "P" ||
     humanChoice === "R" && computerChoice === "S" ||
     humanChoice === "P" && computerChoice === "R" 
 
 )  {
     alert("You won!")
-
+    wins++
 } else if (humanChoice === computerChoice) {
- alert("Round tied!")
+    alert("Round tied!")
+    ties++
 } else {
-     alert("You lost!")
-    //increase losses
-
+    alert("You lost!")
+    losses++
 }
 
-
-    
-        
+// show score
+    alert("Wins: " + wins + "\nTies: " + ties + "\nLosses: " + losses)    
 
 // ask user "do you want to play again?"
     //if yes
